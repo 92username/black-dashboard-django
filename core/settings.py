@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'django.middleware.locale.LocaleMiddleware',  # Internationalization
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -129,6 +130,17 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+# Idiomas suportados
+LANGUAGES = [
+    ('en', 'English'),
+    ('pt-br', 'Português (Brasil)'),
+]
+
+# Diretório de traduções
+LOCALE_PATHS = [
+    BASE_DIR / 'locale',
+]
 
 #############################################################
 # SRC: https://devcenter.heroku.com/articles/django-assets
