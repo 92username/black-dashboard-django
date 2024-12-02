@@ -139,9 +139,9 @@ LANGUAGES = [
 ]
 
 # Diretório de traduções
-LOCALE_PATHS = [
-    BASE_DIR / 'locale',
-]
+# LOCALE_PATHS = [
+#    BASE_DIR / 'locale',
+# ]
 
 #############################################################
 # SRC: https://devcenter.heroku.com/articles/django-assets
